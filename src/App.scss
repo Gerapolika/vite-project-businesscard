@@ -1,0 +1,139 @@
+@mixin silly-links {
+    margin: 0px 10px;
+    position: relative;
+    max-width: 297px;
+    min-width: 297px;
+    background: rgba( 0,0,0,0);  
+    border: none;
+    font-family: Inter;
+  }
+
+  @mixin button-mix {
+    font-size: 14px;
+    border: none;
+    border-radius: 10px;
+    margin: 0px 10px;
+    width: 115px;
+    height: 34px;
+    font-family: Inter;
+    display: flex;
+    justify-content: center; 
+    align-items: center
+    }
+
+  
+.body {
+    background-color: #23252C;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .information {
+    margin: 0;
+    background-color: #1A1B21;
+    min-width: 317px;
+    max-width: 317px;
+    min-height: 399px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .photo {
+    width: 317px;
+  }
+
+.name {
+     @include silly-links;
+     text-align: center;  
+     margin-top: 10px;
+     color: #fff;
+     font-weight: 700;
+     font-size: 25px;
+}
+  
+  .role {
+    @include silly-links;
+    text-align: center;  
+    color: #F3BF99;
+    font-size: 12.8px;
+  }
+
+  .site {
+    @include silly-links;
+    margin: 10px 10px;
+    text-align: center;  
+    color: #fff;
+    font-size: 10.24px;
+  }
+
+  .buttons {
+    margin: 10px 20px;
+    display: flex;
+    justify-content: center; 
+  }
+
+  .button1 {
+    @include button-mix;
+  }
+
+  .button2 {
+    color: #fff;
+    @include button-mix;
+    background-color: #5093E2;
+  }
+
+  .icon {
+    margin-right: 10px;
+  }
+
+  .about{
+    margin: 10px;
+    text-align: left;  
+    color: #fff;
+    font-size: 16px;
+    width: 247px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h3 {
+      margin: 0px;
+      height: 21px
+    }
+  }
+
+
+
+  .text {
+    @include silly-links;
+    overflow-y: auto;
+    font-size: 10.24px;
+    margin: 10px 0px;
+    color: #fff;
+    min-height: 61px;
+    min-width: 247px;
+    max-width: 247px;
+    color: #DCDCDC;
+    padding: 0px;
+  }
+
+  .icons {
+    background-color: #161619;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 317px;
+    height: 64px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .icons img {
+    margin: 0px 10px;
+  }
